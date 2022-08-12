@@ -37,5 +37,34 @@ namespace Max_values_using_Generics
             }
             throw new Exception("num1,num2 and num3 are same");
         }
+        public static float MaximumFloat(float num4, float num5, float num6)
+        {
+
+            if (num4.CompareTo(num5) > 0 && num4.CompareTo(num6) > 0 ||
+
+                num4.CompareTo(num5) >= 0 && num4.CompareTo(num6) > 0 ||
+
+                num4.CompareTo(num5) > 0 && num4.CompareTo(num6) >= 0)
+            {
+                return num4;
+            }
+            if (num5.CompareTo(num4) > 0 && num5.CompareTo(num6) > 0 ||
+
+                num5.CompareTo(num4) >= 0 && num5.CompareTo(num6) > 0 ||
+
+                num5.CompareTo(num4) > 0 && num5.CompareTo(num6) >= 0)
+            {
+                return num5;
+            }
+            if (num6.CompareTo(num4) > 0 && num6.CompareTo(num5) > 0 ||
+
+                num6.CompareTo(num4) >= 0 && num6.CompareTo(num5) > 0 ||
+
+                num6.CompareTo(num4) > 0 && num6.CompareTo(num6) >= 0)
+            {
+                return num6;
+            }
+            throw new Exception("num4,num5 and num6 are same");
+        }
     }
 }
